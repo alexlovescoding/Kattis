@@ -37,3 +37,7 @@ local.properties
 
 # TeXlipse plugin
 .texlipse
+
+# Kattis submition files
+src/.kattisrc
+src/submit.py
