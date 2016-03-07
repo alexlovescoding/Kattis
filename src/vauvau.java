@@ -33,18 +33,16 @@ public class vauvau {
     }
     
     public static boolean attack(int aggressive, int calm, int visitTime) {
-        int prevTime = 0;
-        int nextTime = 0;
+        int time = 0;
         while(true) {
-            nextTime = prevTime + aggressive;
-            if (visitTime <= nextTime) {
+            time = time + aggressive;
+            if (visitTime <= time) {
                 return true;
             }
-            nextTime = nextTime + calm;
-            if (visitTime <= nextTime) {
+            time = time + calm;
+            if (visitTime <= time) {
                 return false;
             }
-            prevTime = nextTime;
         }
     }
 }
